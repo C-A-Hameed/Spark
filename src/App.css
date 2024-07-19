@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --red: #d01c28;
+    --gray: #2e2e2e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+button{
+    all: unset;
+    padding: 6px 16px;
+    background: var(--red);
+    height: 32px;
+    color: white;
+    font-weight: 500;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    align-items: center;
+}
+
+.spark {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #d01c28;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+/* SUBJECT */
+
+.subject{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 72px);
+}
+
+.subject-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.subject h1{
+    font-weight: 800;
+    line-height: 82px;
+    font-size: 69px;
+}
+
+.subject p{
+    font-weight: 600;
+    color: var(--gray);
+    max-width: 400px;
+}
+
+.sub-btn{
+    display: flex;
+    gap: 40px;
+}
+
+.sub-btn button{
+    font-size: 24px;
+    border: #2e2e2e 1px solid;
+}
+
+.sec-btn{
+    background: transparent;
+    color: #2e2e2e;
+}
+
+.shop-by p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.brand-icons{
+    display: flex;
+    gap: 16px;
+}
+
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+@media (max-width: 1024px) {
+    .subject {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .subject-content {
+        align-items: center;
+    }
+
+    .subject h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .subject p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .sub-btn {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sub-btn button {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .spark {
+        font-size: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .subject h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .subject p {
+        font-size: 14px;
+    }
+
+    .sub-btn button {
+        font-size: 18px;
+    }
+
+    .brand-icons {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .spark {
+        font-size: 30px;
+    }
+
+    .subject h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .subject p {
+        font-size: 12px;
+    }
+
+    .sub-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sub-btn button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .brand-icons {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
